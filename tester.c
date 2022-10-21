@@ -27,7 +27,7 @@
  */
 int main(int argc, char** argv) {
     char* programDir = getFatherPath(argv[0]);                          // Crea array con el directorio en donde se encuentra el ejecutable actual.
-    char path[265] = "";                                                // Crea array que tendrá la ruta del archivo con las rutas.
+    char path[1024] = "";                                               // Crea array que tendrá la ruta del archivo con las rutas.
     sprintf(path, "%s\\config\\paths.ini", programDir);                 // Almacena la ruta del archivo de rutas.
     MessageList* paths = makePathList(path, programDir);                // Obtiene los messages del archivo con las rutas.
 
