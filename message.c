@@ -67,7 +67,7 @@ BOOL APIENTRY DllMain(HINSTANCE instance, DWORD reason, LPVOID reserved) {
 #endif
 
 /**
- * FIXME: Definición de {@code newMessage}.
+ * FIXME: Description of {@code newMessage}.
  * Agrega un {Message} a una lista de {Message} específicada como parámetro.
  */
 LANGUAGE DLLIMPORT CALLING void newMessage(MessageList* list, char* name, char* value) {
@@ -90,7 +90,7 @@ LANGUAGE DLLIMPORT CALLING void newMessage(MessageList* list, char* name, char* 
 }
 
 /**
- * FIXME: Definición de {@code setMessageName}.
+ * FIXME: Description of {@code setMessageName}.
  * Cambia el campo name de un {Message} por el de un array especificado.
  */
 LANGUAGE DLLIMPORT CALLING void setMessageName(Message* aux, char* name) {
@@ -103,7 +103,7 @@ LANGUAGE DLLIMPORT CALLING void setMessageName(Message* aux, char* name) {
 }
 
 /**
- * FIXME: Definición de {@code setMessageValue}.
+ * FIXME: Description of {@code setMessageValue}.
  * Cambia el campo value de un {Message} por el de un array especificado.
  */
 LANGUAGE DLLIMPORT CALLING void setMessageValue(Message* aux, char* value) {
@@ -115,7 +115,7 @@ LANGUAGE DLLIMPORT CALLING void setMessageValue(Message* aux, char* value) {
 }
 
 /**
- * FIXME: Definición de {@code makeMessageList}.
+ * FIXME: Description of {@code makeMessageList}.
  * Almacena en una lista de {Message} todos los {Message} del archivo indicado por filePath.
  */
 LANGUAGE DLLIMPORT CALLING MessageList* makeMessageList(char* filePath) {
@@ -167,7 +167,7 @@ LANGUAGE DLLIMPORT CALLING MessageList* makeMessageList(char* filePath) {
 }
 
 /**
- * FIXME: Definición de {@code makePathList}.
+ * FIXME: Description of {@code makePathList}.
  * Almacena en una lista de rutas todos los Message del archivo indicado por filePath.
  */
 LANGUAGE DLLIMPORT CALLING MessageList* makePathList(char* filePath, char* ProgramDir) {
@@ -211,7 +211,7 @@ LANGUAGE DLLIMPORT CALLING MessageList* makePathList(char* filePath, char* Progr
 }
 
 /**
- * FIXME: Definición de {@code printMessageList}.
+ * FIXME: Description of {@code printMessageList}.
  * Muestra los elementos de una lista de {Message} en pantalla.
  */
 LANGUAGE DLLIMPORT CALLING void printMessageList(MessageList* list) {
@@ -231,7 +231,7 @@ LANGUAGE DLLIMPORT CALLING void printMessageList(MessageList* list) {
 }
 
 /**
- * FIXME: Definición de {@code compareMessageName}.
+ * FIXME: Description of {@code compareMessageName}.
  * Compara el campo name de un {Message} con un array y devuelve 1 si son iguales, y caso contrario 0.
  */
 LANGUAGE DLLIMPORT CALLING int compareMessageName(Message* aux, char* array) {
@@ -246,7 +246,7 @@ LANGUAGE DLLIMPORT CALLING int compareMessageName(Message* aux, char* array) {
 }
 
 /**
- * FIXME: Definición de {@code findMessage}.
+ * FIXME: Description of {@code findMessage}.
  * Obtiene un mensaje de una lista de mensajes.
  */
 LANGUAGE DLLIMPORT CALLING Message* findMessage(MessageList* list, char* name) {
