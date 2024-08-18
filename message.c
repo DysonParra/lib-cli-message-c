@@ -176,11 +176,11 @@ LANGUAGE DLLIMPORT CALLING MessageList* makePathList(char* filePath, char* Progr
     char* value = NULL;                                                                 // Crea variable para almacenar el valor de cada Message.
     char path[500] = "";                                                                // Crea array para almacenar la ruta de cada mensaje.
     int pos = 0;                                                                        // Crea variable para indicar la posición actual de path.
-    char actualDir[300] = "";                                                           // Crea variable que tendrá el directorio actual.
-    getcwd(actualDir, 300);                                                             // Almacena el directorio actual en actualDir.
+    char currentDir[300] = "";                                                          // Crea variable que tendrá el directorio actual.
+    getcwd(currentDir, 300);                                                            // Almacena el directorio actual en currentDir.
 
     char* flag1[] = {"%ProgramDir%", ProgramDir};                                       // Crea flag con el directorio del programa.
-    char* flag2[] = {"%actualDir%", actualDir};                                         // Crea flag con el directorio actual.
+    char* flag2[] = {"%currentDir%", currentDir};                                       // Crea flag con el directorio actual.
     char** flags[] = {flag1, flag2, NULL};                                              // Crea apuntador a array de apuntadores con las flags.
 
     while (aux != NULL) {                                                               // Recorre la lista de Message.
